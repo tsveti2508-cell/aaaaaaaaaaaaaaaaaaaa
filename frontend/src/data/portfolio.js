@@ -43,11 +43,23 @@ export const projects = [
     title: "Blood Moon Kai'sa",
     category: "Skin Concept",
     subtitle: "League of Legends — Fan Concept",
-    cover: "https://cdnb.artstation.com/p/assets/covers/images/099/990/601/large/tsvetelina-tsvetelina-img-5888.jpg?1781561224",
+    cover: "https://cdnb.artstation.com/p/assets/images/images/100/496/133/large/tsvetelina-img-5888.jpg?1783082919",
     images: [
       {
-        url: "https://cdnb.artstation.com/p/assets/covers/images/099/990/601/large/tsvetelina-tsvetelina-img-5888.jpg?1781561224",
-        caption: "Blood Moon Kai'sa — skin concept",
+        url: "https://cdnb.artstation.com/p/assets/images/images/100/496/133/large/tsvetelina-img-5888.jpg?1783082919",
+        caption: "Blood Moon Kai'sa — main form",
+      },
+      {
+        url: "https://cdnb.artstation.com/p/assets/images/images/100/496/041/large/tsvetelina-img-5893.jpg?1783082670",
+        caption: "Blood Moon Kai'sa — after-using-her-E ability form",
+      },
+      {
+        url: "https://cdnb.artstation.com/p/assets/images/images/100/496/001/large/tsvetelina-img-2294.jpg?1783082593",
+        caption: "Process / development view",
+      },
+      {
+        url: "https://cdnb.artstation.com/p/assets/images/images/100/496/011/large/tsvetelina-img-2296.jpg?1783082618",
+        caption: "Process / development view",
       },
     ],
     link: "https://www.artstation.com/artwork/Ov22VK",
