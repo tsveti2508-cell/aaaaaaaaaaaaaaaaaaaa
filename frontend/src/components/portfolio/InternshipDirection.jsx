@@ -7,12 +7,7 @@ const cards = [
       "My work focuses on how a design communicates: silhouette, palette, cultural cues, and small props that hint at a character's story. I aim for concepts that read clearly at a glance and reward a second, closer look.",
   },
   {
-    title: "Production awareness",
-    body:
-      "I approach each piece with iteration in mind — thumbnails, colour studies, references, and progress passes. I've built full projects end-to-end (from concept sheets to printed cards used in-game), so I understand how a design leaves the sketchbook and reaches production.",
-  },
-  {
-    title: "Growth potential",
+    title: "Growth & Future Work",
     body:
       "My next goal is to grow inside a real art team — absorbing direction, sharpening my rendering, and expanding into visual effects and 3D. I want to contribute to a world I've admired for years and learn from the artists who shaped it.",
   },
@@ -44,7 +39,7 @@ export default function InternshipDirection() {
           development supports a full production.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {cards.map((c, i) => (
             <div
               key={c.title}
