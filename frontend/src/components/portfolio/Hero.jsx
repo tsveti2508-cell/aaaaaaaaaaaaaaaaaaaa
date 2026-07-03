@@ -22,14 +22,6 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-[#050505]" />
       </div>
 
-      {/* Top-right meta */}
-      <div className="absolute top-24 md:top-32 right-6 md:right-12 z-20 max-w-xs text-right">
-        <p className="overline text-[#C8AA6E] mb-3">Portfolio · 2025 / 2026</p>
-        <p className="text-sm text-neutral-300 leading-relaxed font-body">
-          Sofia · Bulgaria — open to concept art internships & remote collaborations across games, film, and publishing.
-        </p>
-      </div>
-
       {/* Bottom content */}
       <div className="relative z-20 max-w-[1600px] mx-auto w-full px-6 md:px-12 pb-16 md:pb-24">
         <p
