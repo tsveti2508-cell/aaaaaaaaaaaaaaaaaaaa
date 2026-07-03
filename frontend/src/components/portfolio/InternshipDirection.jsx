@@ -9,7 +9,7 @@ const cards = [
   {
     title: "Growth & Future Work",
     body:
-      "My next goal is to grow inside a real art team — absorbing direction, sharpening my rendering, and expanding into visual effects and 3D. I want to contribute to a world I've admired for years and learn from the artists who shaped it.",
+      "My next goal is to expand my knowledge as well as experiment with more types of media. As an artist, it is very important to adapt to new tools and keep growing with the development of new technologies. I would also like to find a way to bring more projects inspired by my culture into the game world.",
   },
 ];
 
