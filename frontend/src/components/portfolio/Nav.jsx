@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Direction", href: "#direction" },
-  { label: "Work", href: "#work" },
   { label: "About Me", href: "#about" },
+  { label: "Internship", href: "#direction" },
+  { label: "Portfolio", href: "#work" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
