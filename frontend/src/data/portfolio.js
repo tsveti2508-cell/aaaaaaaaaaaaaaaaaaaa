@@ -55,11 +55,11 @@ export const projects = [
       },
       {
         url: "https://cdnb.artstation.com/p/assets/images/images/100/496/001/large/tsvetelina-img-2294.jpg?1783082593",
-        caption: "Process / development view",
+        caption: "Basic outline.",
       },
       {
         url: "https://cdnb.artstation.com/p/assets/images/images/100/496/011/large/tsvetelina-img-2296.jpg?1783082618",
-        caption: "Process / development view",
+        caption: "In progress — choosing the right colors that also fit the color palette of the skin line. Chose to have red around the hands so it symbolizes blood, since the character is portrayed in the game as a fighter.",
       },
     ],
     link: "https://www.artstation.com/artwork/Ov22VK",
