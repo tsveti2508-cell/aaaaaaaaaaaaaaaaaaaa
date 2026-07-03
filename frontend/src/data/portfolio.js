@@ -47,7 +47,7 @@ export const projects = [
     images: [
       {
         url: "https://cdnb.artstation.com/p/assets/images/images/100/496/133/large/tsvetelina-img-5888.jpg?1783082919",
-        caption: "Blood Moon Kai'sa — main form",
+        caption: "Blood Moon Kai'sa — main form on the right and E form on the left.",
       },
       {
         url: "https://cdnb.artstation.com/p/assets/images/images/100/496/041/large/tsvetelina-img-5893.jpg?1783082670",
