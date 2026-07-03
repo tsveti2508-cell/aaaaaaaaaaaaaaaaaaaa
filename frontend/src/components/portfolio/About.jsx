@@ -19,9 +19,11 @@ export default function About() {
             />
             <div className="absolute inset-0 border border-[#C8AA6E]/20" />
           </div>
-          <p className="overline text-neutral-500 mt-4 text-right">
-            [ 01 · The Artist ]
-          </p>
+          <div className="mt-4 flex justify-end">
+            <p className="overline text-neutral-500 border-t border-white/20 pt-3">
+              01 · The Artist
+            </p>
+          </div>
         </div>
 
         {/* Right column - text */}
