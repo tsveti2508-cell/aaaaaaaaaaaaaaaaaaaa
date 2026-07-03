@@ -5,6 +5,7 @@ const links = [
   { label: "Work", href: "#work" },
   { label: "About Me", href: "#about" },
   { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Nav() {
