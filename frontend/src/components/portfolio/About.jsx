@@ -15,7 +15,7 @@ export default function About() {
             <img
               src={artist.avatar}
               alt="Tsvetelina"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
             />
             <div className="absolute inset-0 border border-[#C8AA6E]/20" />
           </div>
