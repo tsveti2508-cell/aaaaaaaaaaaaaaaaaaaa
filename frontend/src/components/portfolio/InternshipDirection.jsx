@@ -7,7 +7,7 @@ const cards = [
       "My work focuses on how a design communicates: silhouette, palette, cultural cues, and small props that hint at a character's story. I aim for concepts that read clearly at a glance and reward a second, closer look.",
   },
   {
-    title: "Growth & Future Work",
+    title: "Growth & Goals",
     body:
       "My next goal is to expand my knowledge as well as experiment with more types of media. As an artist, it is very important to adapt to new tools and keep growing with the development of new technologies. I would also like to find a way to bring more projects inspired by my culture into the game world.",
   },

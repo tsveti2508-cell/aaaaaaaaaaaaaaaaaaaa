@@ -5,7 +5,6 @@ const links = [
   { label: "Work", href: "#work" },
   { label: "About Me", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export default function Nav() {
@@ -47,13 +46,6 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            data-testid="nav-cta"
-            className="overline px-5 py-2.5 border border-[#C8AA6E] text-[#C8AA6E] hover:bg-[#C8AA6E] hover:text-black transition-all duration-300 rounded-full"
-          >
-            Contact
-          </a>
         </div>
 
         <button
