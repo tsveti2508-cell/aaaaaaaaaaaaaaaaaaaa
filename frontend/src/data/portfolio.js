@@ -1,5 +1,6 @@
-// Portfolio data pulled from Tsvetelina's ArtStation profile
+// Portfolio data pulled directly from Tsvetelina's ArtStation profile
 // Source: https://www.artstation.com/tsvetelina
+// Descriptions are verbatim from the artist's ArtStation project pages.
 
 export const artist = {
   name: "Tsvetelina",
@@ -35,7 +36,6 @@ export const skills = [
   "Anime & Manga",
 ];
 
-// Note: replacing "smaller_square" (300x300) with "large" gives the full-quality asset
 export const projects = [
   {
     id: "kaisa",
@@ -43,50 +43,76 @@ export const projects = [
     category: "Skin Concept",
     subtitle: "League of Legends — Fan Concept",
     year: "2025",
-    image: "https://cdnb.artstation.com/p/assets/covers/images/099/990/601/large/tsvetelina-tsvetelina-img-5888.jpg?1781561224",
-    thumb: "https://cdnb.artstation.com/p/assets/covers/images/099/990/601/large/tsvetelina-tsvetelina-img-5888.jpg?1781561224",
+    cover: "https://cdnb.artstation.com/p/assets/covers/images/099/990/601/large/tsvetelina-tsvetelina-img-5888.jpg?1781561224",
+    images: [
+      {
+        url: "https://cdnb.artstation.com/p/assets/covers/images/099/990/601/large/tsvetelina-tsvetelina-img-5888.jpg?1781561224",
+        caption: "Blood Moon Kai'sa — skin concept",
+      },
+    ],
     link: "https://www.artstation.com/artwork/Ov22VK",
     description:
-      "A Blood Moon skin fan concept for Kai'sa built around ritual masks, crimson silk, and the eerie stillness that defines the Blood Moon cult. Explored a limited palette (bone, ink, arterial red) to keep the silhouette readable and the mood cinematic.",
+      "This is a concept design for the character Kai'sa from Leauge of Legdends for the skin line \"Blood Moon\". The design consists of 2 forms: the main form and the after-using-her-E ability form. The design consists of elements typical of skinlines, such as golden ornament, moon symbols, and Japanese mythological references. The skin lines represent Oni, a Japanese mythical creature. The process took me 2 weeks.",
     span: "col-span-12 md:col-span-8 md:row-span-2",
   },
   {
     id: "tarot",
-    title: "Tarot Cards — The Fool",
+    title: "Tarot Cards design",
     category: "Illustration Series",
-    subtitle: "Original Deck Design",
+    subtitle: "Original Deck for a Game",
     year: "2025",
-    image: "https://cdna.artstation.com/p/assets/covers/images/099/989/698/large/tsvetelina-tsvetelina-fool.jpg?1781559119",
-    thumb: "https://cdna.artstation.com/p/assets/covers/images/099/989/698/large/tsvetelina-tsvetelina-fool.jpg?1781559119",
+    cover: "https://cdna.artstation.com/p/assets/covers/images/099/989/698/large/tsvetelina-tsvetelina-fool.jpg?1781559119",
+    images: [
+      { url: "https://cdnb.artstation.com/p/assets/images/images/099/677/813/large/tsvetelina-artboard-2.webp?1780648359", caption: "Tarot card design inspired by Greek mythology." },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/677/814/large/tsvetelina-artboard-6.webp?1780645287", caption: "Tarot card design of a knight" },
+      { url: "https://cdnb.artstation.com/p/assets/images/images/099/677/815/large/tsvetelina-artboard-8.webp?1780645294", caption: "Tarot card design of a magical frog" },
+      { url: "https://cdnb.artstation.com/p/assets/images/images/099/677/825/large/tsvetelina-fool.webp?1780645354", caption: "Tarot card design of Bulgarian folklore" },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/677/828/large/tsvetelina-moon.webp?1780645361", caption: "Tarot card design referencing the moon" },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/677/830/large/tsvetelina-star.webp?1780645367", caption: "Tarot card design referencing the star." },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/679/384/large/tsvetelina-kartiartboard-1.webp?1780650211", caption: "Outline and shadow using grayscale of the card design in Photoshop. The shadows are positioned so it can look like they are cast from the sun. Furthermore, the lines around the eyes are thicker." },
+      { url: "https://cdnb.artstation.com/p/assets/images/images/099/679/385/large/tsvetelina-kartiartboard-2.webp?1780650214", caption: "In progress" },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/679/388/large/tsvetelina-kartiartboard-6.webp?1780650219", caption: "In progress" },
+      { url: "https://cdnb.artstation.com/p/assets/images/images/099/679/391/large/tsvetelina-kartiartboard-7.webp?1780650222", caption: "In progress" },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/679/392/large/tsvetelina-kartiartboard-8.webp?1780650227", caption: "In progress" },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/679/406/large/tsvetelina-card-design-number-1-guy-walking.webp?1780650286", caption: "Inspiration board and progress behind the tarot card design number 1. It contains elements from Bulgarian traditional clothing usually worn by young boys — matching the \"Fool\" card in which we see a young boy standing on the edge of a hill." },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/679/412/large/tsvetelina-714043135-4355805957992377-4723942602107002149-n.webp?1780650312", caption: "Printed cards" },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/679/428/large/tsvetelina-715417983-947949818204877-6370903211441258963-n.webp?1780650335", caption: "The cards being used in the game." },
+    ],
     link: "https://www.artstation.com/artwork/6LKX9r",
     description:
-      "Opening piece of an ongoing 22-card Major Arcana deck. Each card reinterprets classical symbolism through a modern narrative lens — soft ceremonial linework, ornamental borders, and a warm-cool split light.",
+      "I created tarot card designs for a game by using cultural symbols from different countries as well as fantasy elements. It contains a total of 6 finished designs as well as some of their progress, printed versions, and a photo showcasing them used in the game. The target audience is first-year university students. The making of the cards took over 2 months, with all the concepting and rendering combined.",
     span: "col-span-12 md:col-span-4",
   },
   {
     id: "james",
-    title: "James McAvoy",
+    title: "Traditional Art — James McAvoy",
     category: "Traditional Portrait",
-    subtitle: "Graphite study",
+    subtitle: "Acrylic on canvas",
     year: "2025",
-    image: "https://cdnb.artstation.com/p/assets/images/images/099/694/967/large/tsvetelina-img-9003.jpg?1780685999",
-    thumb: "https://cdnb.artstation.com/p/assets/images/images/099/694/967/large/tsvetelina-img-9003.jpg?1780685999",
+    cover: "https://cdnb.artstation.com/p/assets/images/images/099/694/967/large/tsvetelina-img-9003.webp?1780685999",
+    images: [
+      { url: "https://cdnb.artstation.com/p/assets/images/images/099/694/967/large/tsvetelina-img-9003.webp?1780685999", caption: "Finished version" },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/694/972/large/tsvetelina-img-8973.webp?1780686006", caption: "Progress — reshaping the face, eyes, positioning and fixing colors so it can blend more and give that more realistic look." },
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/694/974/large/tsvetelina-img-8974.webp?1780686019", caption: "Reference picture" },
+    ],
     link: "https://www.artstation.com/artwork/EzlKN2",
     description:
-      "Traditional graphite portrait study — focused on likeness, subtle value shifts across the face, and translating photographic reference into a living pencil rendering. Fundamentals feeding directly into digital work.",
+      "Traditional art of the famous Actor James Mcavoy from the movie \"Atonement\" 2005. This project over 2 weeks because of difficulties regarding the positioning of the face and the features in it. Experienced with acrylic paint and used multiple color values.",
     span: "col-span-12 md:col-span-4",
   },
   {
     id: "anime",
-    title: "Anime / Manga Study",
+    title: "Anime / Manga Art",
     category: "Illustration",
-    subtitle: "Personal work",
+    subtitle: "Ulquiorra — Bleach · Broken Doll Challenge",
     year: "2025",
-    image: "https://cdna.artstation.com/p/assets/images/images/099/694/802/20260605135705/large/tsvetelina-img-0428.jpg?1780685825",
-    thumb: "https://cdna.artstation.com/p/assets/images/images/099/694/802/20260605135705/large/tsvetelina-img-0428.jpg?1780685825",
+    cover: "https://cdna.artstation.com/p/assets/images/images/099/694/802/large/tsvetelina-img-0428.webp?1780685825",
+    images: [
+      { url: "https://cdna.artstation.com/p/assets/images/images/099/694/802/large/tsvetelina-img-0428.webp?1780685825", caption: "Ulquiorra drawing" },
+    ],
     link: "https://www.artstation.com/artwork/x3WxOR",
     description:
-      "Personal anime/manga illustration exploring expressive linework and layered flat colour. A study in silhouette clarity, hair rendering, and the graphic economy that anime does so well.",
+      "Anime character Ulquiorra from Bleach. Done the famous \"broken doll\" art challenge but on traditional art using acrylic paint.",
     span: "col-span-12 md:col-span-8",
   },
 ];
