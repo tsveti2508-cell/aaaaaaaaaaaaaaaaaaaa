@@ -52,7 +52,7 @@ export default function Nav() {
             data-testid="nav-cta"
             className="overline px-5 py-2.5 border border-[#C8AA6E] text-[#C8AA6E] hover:bg-[#C8AA6E] hover:text-black transition-all duration-300 rounded-full"
           >
-            Let&apos;s Talk
+            Contact
           </a>
         </div>
 

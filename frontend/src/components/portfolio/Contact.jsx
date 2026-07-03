@@ -29,17 +29,12 @@ export default function Contact() {
           data-testid="contact-heading"
           className="font-display text-[16vw] md:text-[11vw] leading-[0.85] tracking-tighter text-white mb-12"
         >
-          Let&apos;s <span className="italic text-[#C8AA6E]">talk</span>.
+          Contacts
         </h2>
 
         <div className="grid grid-cols-12 gap-6 md:gap-12 mt-12 md:mt-20">
           <div className="col-span-12 md:col-span-6">
-            <p className="text-lg md:text-2xl text-neutral-300 font-body leading-relaxed max-w-xl">
-              Have a project, an internship opening, or just want to chat about
-              concept work? I&apos;d love to hear from you.
-            </p>
-
-            <div className="mt-10 flex items-center gap-4 flex-wrap">
+            <div className="flex items-center gap-4 flex-wrap">
               <button
                 onClick={copyEmail}
                 data-testid="copy-email-btn"
