@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "@/components/portfolio/Nav";
 import Hero from "@/components/portfolio/Hero";
 import About from "@/components/portfolio/About";
+import InternshipDirection from "@/components/portfolio/InternshipDirection";
 import Projects from "@/components/portfolio/Projects";
 import Skills from "@/components/portfolio/Skills";
 import Contact from "@/components/portfolio/Contact";
@@ -14,6 +15,7 @@ export default function Portfolio() {
       <main className="relative z-10">
         <Hero />
         <About />
+        <InternshipDirection />
         <Projects />
         <Skills />
         <Contact />
