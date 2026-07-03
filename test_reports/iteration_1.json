@@ -1,0 +1,45 @@
+{
+  "summary": "First-finish smoke test of the Tsvetelina portfolio site. Backend default endpoints untouched and working. Frontend loads well; nav, hero, projects grid + dialog, contact copy/social links, mobile menu all work. Two real bugs found: skills marquee ribbons are missing data-testid attributes, and one of the 4 ArtStation project images is broken (returns non-image).",
+  "tested_scope": ["frontend", "backend", "integration"],
+  "passed": [
+    "GET /api/ returns {'message':'Hello World'} (200)",
+    "GET /api/status returns [] (200)",
+    "Homepage loads with hero-title and hero-view-work visible",
+    "Nav links (work/about/skills/contact) + nav-cta present",
+    "All 4 project cards render (kaisa/tarot/james/anime)",
+    "Clicking project-card-kaisa opens project-dialog with valid ArtStation external link (https://www.artstation.com/artwork/Ov22VK)",
+    "project-dialog-close removes dialog from DOM",
+    "4 tool cards (tool-0..3) render in Skills",
+    "copy-email-btn clickable, mailto-btn href=mailto:hello@tsvetelina.art",
+    "social-artstation, social-instagram, social-email all have valid hrefs",
+    "Mobile viewport: nav-menu-toggle opens menu with all nav links visible (verified via screenshot)"
+  ],
+  "failed": [
+    {
+      "area": "Skills section",
+      "issue": "Missing data-testid='skills-marquee-1' and 'skills-marquee-2' on the two marquee ribbons",
+      "evidence": "page.locator('[data-testid=\"skills-marquee-1\"]').count() === 0 and skills-marquee-2 count === 0. Spec explicitly requires these testids.",
+      "priority": "MEDIUM"
+    },
+    {
+      "area": "Projects images",
+      "issue": "One of the 4 ArtStation project images fails to load (broken image)",
+      "evidence": "Broken src: https://cdna.artstation.com/p/assets/images/images/099/694/802/20260605135705/large/tsvetelina-img-0428.jpg?1780685825 (naturalWidth=0). Likely the James McAvoy or Anime card.",
+      "priority": "HIGH"
+    },
+    {
+      "area": "Contact toast",
+      "issue": "Toast 'Email copied to clipboard' not detected in DOM text after clicking copy-email-btn",
+      "evidence": "body inner_text did not contain 'copied' after click. May be due to clipboard API being blocked in headless browser (permission denied silently) rather than a code bug. Worth manual re-verification.",
+      "priority": "LOW"
+    }
+  ],
+  "action_items": [
+    "Add data-testid='skills-marquee-1' and data-testid='skills-marquee-2' to the two <Marquee> elements in /app/frontend/src/components/portfolio/Skills.jsx",
+    "Replace the broken ArtStation image URL in /app/frontend/src/data/portfolio.js (tsvetelina-img-0428.jpg?1780685825) with a working image URL",
+    "Manually verify copy-email toast in a real browser; if it doesn't appear, ensure sonner <Toaster /> is mounted and clipboard fallback works"
+  ],
+  "success_rate": {"backend": "100%", "frontend": "~85%"},
+  "retest_needed": true,
+  "full_testing_deferred": true
+}

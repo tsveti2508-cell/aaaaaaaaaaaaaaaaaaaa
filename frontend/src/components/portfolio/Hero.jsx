@@ -1,0 +1,96 @@
+import React from "react";
+import { artist } from "@/data/portfolio";
+import { ArrowDown } from "lucide-react";
+
+const heroImage =
+  "https://images.unsplash.com/photo-1760930380017-b0f1fdad0242?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxkYXJrJTIwcnVpbnMlMjBmYW50YXN5JTIwY29uY2VwdCUyMGFydHxlbnwwfHx8fDE3ODMwNzcwMzl8MA&ixlib=rb-4.1.0&q=85";
+
+export default function Hero() {
+  return (
+    <section
+      id="top"
+      data-testid="hero-section"
+      className="relative min-h-screen w-full flex flex-col justify-end overflow-hidden"
+    >
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroImage}
+          alt="Concept art backdrop"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-[#050505]" />
+      </div>
+
+      {/* Top-right meta */}
+      <div className="absolute top-24 md:top-32 right-6 md:right-12 z-20 max-w-xs text-right">
+        <p className="overline text-[#C8AA6E] mb-3">Portfolio · 2025 / 2026</p>
+        <p className="text-sm text-neutral-300 leading-relaxed font-body">
+          Sofia · Bulgaria — open to concept art internships & remote collaborations across games, film, and publishing.
+        </p>
+      </div>
+
+      {/* Bottom content */}
+      <div className="relative z-20 max-w-[1600px] mx-auto w-full px-6 md:px-12 pb-16 md:pb-24">
+        <p
+          data-testid="hero-overline"
+          className="overline text-[#C8AA6E] mb-6 flex items-center gap-3"
+        >
+          <span className="inline-block w-8 h-px bg-[#C8AA6E]" />
+          Concept Artist · Applying to Riot Games
+        </p>
+
+        <h1
+          data-testid="hero-title"
+          className="font-display text-[18vw] md:text-[13vw] lg:text-[11vw] leading-[0.88] tracking-tighter text-white"
+        >
+          Tsvetelina<span className="text-[#C8AA6E]">.</span>
+        </h1>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-4xl">
+          <p className="text-lg md:text-xl text-neutral-200 leading-relaxed font-body">
+            {artist.tagline}
+          </p>
+          <div className="flex flex-col justify-end gap-4">
+            <a
+              href="#work"
+              data-testid="hero-view-work"
+              className="group inline-flex items-center gap-3 text-white overline hover:text-[#C8AA6E] transition-colors"
+            >
+              <span className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-white/30 group-hover:border-[#C8AA6E] group-hover:bg-[#C8AA6E] group-hover:text-black transition-all">
+                <ArrowDown size={16} />
+              </span>
+              View Selected Work
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom ticker */}
+      <div className="relative z-20 border-t border-white/10 py-4 overflow-hidden bg-black/40 backdrop-blur">
+        <div className="ticker whitespace-nowrap flex gap-12">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <React.Fragment key={i}>
+              <span className="font-display italic text-2xl md:text-3xl text-neutral-400">
+                Character Design
+              </span>
+              <span className="text-[#C8AA6E] text-2xl">✦</span>
+              <span className="font-display italic text-2xl md:text-3xl text-neutral-400">
+                Skin Concepts
+              </span>
+              <span className="text-[#C8AA6E] text-2xl">✦</span>
+              <span className="font-display italic text-2xl md:text-3xl text-neutral-400">
+                Illustration
+              </span>
+              <span className="text-[#C8AA6E] text-2xl">✦</span>
+              <span className="font-display italic text-2xl md:text-3xl text-neutral-400">
+                Visual Development
+              </span>
+              <span className="text-[#C8AA6E] text-2xl">✦</span>
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
