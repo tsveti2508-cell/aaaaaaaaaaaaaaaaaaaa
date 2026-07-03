@@ -16,7 +16,7 @@ const cards = [
 export default function InternshipDirection() {
   return (
     <section
-      id="direction"
+      id="internship"
       data-testid="internship-direction-section"
       className="relative py-24 md:py-40 px-6 md:px-12 border-t border-white/5 bg-[#050505]"
     >

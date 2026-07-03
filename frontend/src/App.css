@@ -5,6 +5,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 90px;
+}
+
 body {
   font-family: 'Outfit', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;

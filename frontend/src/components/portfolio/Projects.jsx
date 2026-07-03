@@ -13,7 +13,7 @@ export default function Projects() {
 
   return (
     <section
-      id="work"
+      id="portfolio"
       data-testid="projects-section"
       className="relative py-24 md:py-40 px-6 md:px-12 border-t border-white/5"
     >

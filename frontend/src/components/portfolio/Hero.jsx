@@ -48,7 +48,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-col justify-end gap-4">
             <a
-              href="#work"
+              href="#portfolio"
               data-testid="hero-view-work"
               className="group inline-flex items-center gap-3 text-white overline hover:text-[#C8AA6E] transition-colors"
             >
