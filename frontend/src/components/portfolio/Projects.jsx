@@ -109,7 +109,7 @@ export default function Projects() {
               <div className="p-8 md:p-12 flex flex-col justify-between gap-8">
                 <div>
                   <p className="overline text-[#C8AA6E] mb-4">
-                    {active.category} · {active.year}
+                    {active.category}
                   </p>
                   <DialogTitle className="font-display text-4xl md:text-5xl leading-tight tracking-tight text-white mb-3">
                     {active.title}
