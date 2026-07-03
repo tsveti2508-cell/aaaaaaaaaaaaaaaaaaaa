@@ -51,7 +51,7 @@ export const projects = [
       },
       {
         url: "https://cdnb.artstation.com/p/assets/images/images/100/496/041/large/tsvetelina-img-5893.jpg?1783082670",
-        caption: "Blood Moon Kai'sa — after-using-her-E ability form",
+        caption: "Golden acrylic that indicates all the golden elements in the skin. It draws the player's attention to the design of the dress and the spikes on the shoes. Furthermore, it adds to the feeling that this is heavily creature-like with all that gold.",
       },
       {
         url: "https://cdnb.artstation.com/p/assets/images/images/100/496/001/large/tsvetelina-img-2294.jpg?1783082593",
