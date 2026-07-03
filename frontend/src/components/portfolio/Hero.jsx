@@ -55,7 +55,7 @@ export default function Hero() {
               <span className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-white/30 group-hover:border-[#C8AA6E] group-hover:bg-[#C8AA6E] group-hover:text-black transition-all">
                 <ArrowDown size={16} />
               </span>
-              View Selected Work
+              View Portfolio
             </a>
           </div>
         </div>
