@@ -31,9 +31,8 @@ export default function About() {
             data-testid="about-heading"
             className="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight text-white mb-10"
           >
-            A brushstroke <br />
-            <span className="italic text-[#C8AA6E]">between</span>
-            <br /> worlds.
+            Artists with <br />
+            <span className="italic text-[#C8AA6E]">years of experience</span>
           </h2>
           <div className="space-y-6 max-w-xl">
             {artist.bio.map((p, i) => (

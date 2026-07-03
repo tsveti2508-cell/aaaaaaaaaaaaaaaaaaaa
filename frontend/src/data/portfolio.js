@@ -9,8 +9,9 @@ export const artist = {
   location: "Available Worldwide · Remote",
   tagline: "Crafting characters, worlds, and stories — one brushstroke at a time.",
   bio: [
-    "I'm a 2D concept artist with a love for character-driven storytelling, dark fantasy palettes, and worlds that feel lived-in. My work spans character concepts, skin design, tarot illustration, and traditional portraiture.",
-    "Currently pursuing a concept art internship at Riot Games — building on a portfolio inspired by League of Legends' visual language, anime lineage, and classical art fundamentals. I chase pieces that feel cinematic, emotive, and unmistakably mine.",
+    "My name is Tsvetelina Shopova, 20 years old student at Hazne University, currently in the \"Creative Media and Game Technology\" Bachelor's Programme.",
+    "I have been drawn to art from a young age, starting with traditional art and moving into digital. I have years of experience, have worked on multiple projects, and have also done commissions for people. I am able to create interesting character designs — from their outfits to elements that symbolize cultures and work with colors to create the perfect atmosphere.",
+    "Alongside concepting art, I also have a big interest in Visual effects and have mastered programmes for editing such as After Effects and Photoshop. Furthermore, I am currently in the process of learning 3d modelling.",
   ],
   email: "hello@tsvetelina.art",
   socials: [
