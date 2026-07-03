@@ -10,9 +10,6 @@ export default function Footer() {
         <p className="overline text-neutral-500">
           © {new Date().getFullYear()} · All artwork property of Tsvetelina Shopova
         </p>
-        <p className="overline text-neutral-500">
-          Crafted with care · Sofia, BG
-        </p>
       </div>
     </footer>
   );
