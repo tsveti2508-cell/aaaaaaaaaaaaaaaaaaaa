@@ -24,7 +24,7 @@ export default function Contact() {
       className="relative py-24 md:py-40 px-6 md:px-12 border-t border-white/5"
     >
       <div className="max-w-[1600px] mx-auto">
-        <p className="overline text-[#C8AA6E] mb-6">Contact · 03</p>
+        <p className="overline text-[#C8AA6E] mb-6">Contact</p>
         <h2
           data-testid="contact-heading"
           className="font-display text-[16vw] md:text-[11vw] leading-[0.85] tracking-tighter text-white mb-12"
