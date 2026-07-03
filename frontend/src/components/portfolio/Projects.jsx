@@ -91,7 +91,7 @@ export default function Projects() {
                           loading="lazy"
                         />
                         {img.caption && (
-                          <figcaption className="px-6 py-3 text-xs text-neutral-400 font-body italic border-t border-white/5">
+                          <figcaption className="px-6 py-4 text-sm md:text-base text-neutral-300 font-body italic border-t border-white/5 leading-relaxed">
                             {img.caption}
                           </figcaption>
                         )}
