@@ -4,7 +4,7 @@ const cards = [
   {
     title: "Artistic mindset",
     body:
-      "My work focuses on how a design communicates: silhouette, palette, cultural cues, and small props that hint at a character's story. I aim for concepts that read clearly at a glance and reward a second, closer look.",
+      "My work focuses heavily on combinations of colors, cultures, silhouettes, and symbolism that add more to the characters themselves. I aim to create something that grabs the interest of the people and makes them look more into the designs as a story.",
   },
   {
     title: "Growth & Goals",
