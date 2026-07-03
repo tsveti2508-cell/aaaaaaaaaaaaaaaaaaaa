@@ -1,0 +1,117 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury / Editorial Future)",
+  "vibe": "Cinematic, moody, high-contrast, editorial magazine meets game art book. Applying for Riot Games.",
+  "typography": {
+    "headings": {
+      "fontFamily": "Playfair Display",
+      "fallback": "serif",
+      "weights": ["400", "700", "900"],
+      "usage": "Massive headlines, tight tracking (tracking-tight or tracking-tighter), editorial storytelling feel."
+    },
+    "body": {
+      "fontFamily": "Outfit",
+      "fallback": "sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Clean geometric contrast against the serif headings. Good for readability."
+    },
+    "accents": {
+      "fontFamily": "Outfit",
+      "style": "uppercase, tracking-[0.2em], text-xs to text-sm for overlines, labels, and metadata."
+    }
+  },
+  "colors": {
+    "background_base": "#050505",
+    "surface": "#0f0f11",
+    "surface_glass": "rgba(25, 25, 28, 0.6)",
+    "text_primary": "#F3F4F6",
+    "text_secondary": "#A1A1AA",
+    "accent_primary": "#C8AA6E",
+    "accent_hover": "#E2C281",
+    "border": "#27272A"
+  },
+  "layout": {
+    "spacing_scale": "Generous. Use p-8, p-12, p-24 for padding. Create breathing room around art.",
+    "grid_system": "Mode A: The 'Tetris' Grid. Asymmetric, overlapping. Mix wide (col-span-8) and tall (row-span-2) shapes. Never use perfectly equal squares for the gallery.",
+    "alignment": "Optical alignment. Left-align dense text blocks. Asymmetrical placement of headings to create tension."
+  },
+  "components": {
+    "navigation": "Sticky, crystal glassmorphism (backdrop-blur-xl bg-black/60). Logo on left, links on right. Delicate 1px bottom border (border-white/10).",
+    "hero": "Max overlay opacity bg-black/40. The image MUST be visible. Massive H1 ('Tlishue') with tight tracking. A clear sub-headline targeting '2D Concept Artist | Riot Games'.",
+    "projects_gallery": "Bento grid/Masonry layout. Direct pure HTML/Tailwind for structure. Hover state: subtle scale (scale-105) and descriptive overlay. Click opens Shadcn Dialog for detail view.",
+    "skills": "The 'Editorial Ribbon'. A very slow marquee using react-fast-marquee. Outline text or contrasting gold text to show skills without boring bullet points.",
+    "contact": "Massive footer typography. 'LET'S TALK' at text-[10vw]. Contrast shift (e.g., gold background with black text, or remain dark with giant gold text)."
+  },
+  "motion": {
+    "hover": "Smooth transitions on images (transition-transform duration-500 ease-out).",
+    "entrance": "Staggered fade-up for gallery items using framer-motion.",
+    "scrolling": "MUST use 'lenis' for momentum scrolling. It's critical for the premium editorial feel."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1760930380017-b0f1fdad0242?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxkYXJrJTIwcnVpbnMlMjBmYW50YXN5JTIwY29uY2VwdCUyMGFydHxlbnwwfHx8fDE3ODMwNzcwMzl8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Giant skull in a dark forest with light beams. High impact concept art backdrop.",
+      "category": "hero"
+    },
+    "projects": [
+      {
+        "url": "https://images.unsplash.com/photo-1765606290905-b9d377ea4d5e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxmYW50YXN5JTIwY2hhcmFjdGVyJTIwY29uY2VwdCUyMGFydHxlbnwwfHx8fDE3ODMwNzcwMjd8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Sunfire Guardian",
+        "description": "Character Concept Art: Armored warrior outdoors. Explored material rendering for plate mail.",
+        "category": "Character Design"
+      },
+      {
+        "url": "https://images.pexels.com/photos/29426270/pexels-photo-29426270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "title": "Freljordian Shieldmaiden",
+        "description": "Character Concept Art: Artistic makeup and warpaint study for a northern warrior.",
+        "category": "Character Design"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1600998837340-4887228e311f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxjeWJlcnB1bmslMjBjaXR5JTIwY29uY2VwdCUyMGFydHxlbnwwfHx8fDE3ODMwNzcwMzN8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Zaun Lower Levels",
+        "description": "Environment Concept Art: Gritty cyberpunk/chem-tech street view.",
+        "category": "Environment Design"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1535391879778-3bae11d29a24?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxjeWJlcnB1bmslMjBjaXR5JTIwY29uY2VwdCUyMGFydHxlbnwwfHx8fDE3ODMwNzcwMzN8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Piltover Skyline",
+        "description": "Environment Concept Art: High-rise buildings illuminating the night.",
+        "category": "Environment Design"
+      },
+      {
+        "url": "https://images.pexels.com/photos/26178753/pexels-photo-26178753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "title": "Noxian Commander",
+        "description": "Character Concept Art: Ornate armor and fierce portrait study.",
+        "category": "Character Design"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1491466424936-e304919aada7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxzY2ktZmklMjBlbnZpcm9ubWVudCUyMGNvbmNlcHQlMjBhcnR8ZW58MHx8fHwxNzgzMDc3MDI3fDA&ixlib=rb-4.1.0&q=85",
+        "title": "Astral Divide",
+        "description": "Environment Concept Art: Northern lights over jagged peaks.",
+        "category": "Environment Design"
+      }
+    ],
+    "about_image": {
+      "url": "https://images.unsplash.com/photo-1615376206384-99dc417d64f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxkYXJrJTIwZmFudGFzeSUyMHdhcnJpb3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODMwNzcwMjd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Artistic self-representation portrait for the bio section.",
+      "category": "about"
+    },
+    "texture": {
+      "url": "https://images.unsplash.com/photo-1513346940221-6f673d962e97?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxkYXJrJTIwZ29sZCUyMHRleHR1cmUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MzA3NzAzOXww&ixlib=rb-4.1.0&q=85",
+      "description": "Dark gold vertical lines texture. Can be used for subtle section dividers or marquee backgrounds with opacity-10.",
+      "category": "background_texture"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install libraries: yarn add @phosphor-icons/react react-fast-marquee framer-motion @studio-freight/lenis clsx tailwind-merge",
+    "Import fonts: Add Playfair Display and Outfit from Google Fonts in index.html.",
+    "Structure: Pure HTML/Tailwind for the marketing layout, avoiding rigid Shadcn 'Card' components to maintain an art-forward, borderless editorial look.",
+    "Grid: Use CSS Grid with varying col-spans (e.g., col-span-4 vs col-span-8) to create an asymmetric, masonry-like gallery for the 'Projects' section.",
+    "Shadcn: Use Shadcn UI ONLY for the Dialog component when clicking on a project for a detailed view.",
+    "Testing: Add data-testid to all interactive elements, navigation links, and project cards.",
+    "Navigation: Keep nav links visible on desktop (no hamburger menu). Hamburger menu is only for mobile.",
+    "Images: Respect max-h-[80vh] for images on mobile to prevent blocking content.",
+    "Accessibility: Ensure hover/focus states have adequate contrast, especially text over images.",
+    "Aesthetics: Keep gradient use to a minimum. Let the art pieces be the primary source of color against the deep black background."
+  ]
+}
