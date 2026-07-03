@@ -26,7 +26,7 @@ export default function About() {
 
         {/* Right column - text */}
         <div className="col-span-12 md:col-span-7 md:pl-8">
-          <p className="overline text-[#C8AA6E] mb-6">About</p>
+          <p className="overline text-[#C8AA6E] mb-6">About Me</p>
           <h2
             data-testid="about-heading"
             className="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight text-white mb-10"
