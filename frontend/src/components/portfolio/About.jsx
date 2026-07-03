@@ -45,7 +45,7 @@ export default function About() {
             ))}
           </div>
 
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 max-w-xl border-t border-white/10 pt-8">
+          <div className="mt-12 grid grid-cols-2 gap-6 max-w-xl border-t border-white/10 pt-8">
             <div>
               <p className="overline text-neutral-500 mb-1">Based in</p>
               <p className="font-display text-lg text-white">Sofia, BG</p>
@@ -53,10 +53,6 @@ export default function About() {
             <div>
               <p className="overline text-neutral-500 mb-1">Focus</p>
               <p className="font-display text-lg text-white">Concept & Skins</p>
-            </div>
-            <div>
-              <p className="overline text-neutral-500 mb-1">Status</p>
-              <p className="font-display text-lg text-[#C8AA6E]">Open</p>
             </div>
           </div>
         </div>
