@@ -24,20 +24,10 @@ export default function InternshipDirection() {
         <p className="overline text-[#C8AA6E] mb-6">Internship Direction</p>
         <h2
           data-testid="direction-heading"
-          className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter text-white mb-10 md:mb-16"
+          className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter text-white mb-16 md:mb-24"
         >
           Internship <span className="italic text-[#C8AA6E]">direction</span>
         </h2>
-
-        <p
-          data-testid="direction-intro"
-          className="text-neutral-300 max-w-3xl font-body text-base md:text-lg leading-relaxed mb-16 md:mb-24"
-        >
-          This portfolio presents my profile as a young concept artist who
-          combines classical fundamentals, digital rendering, and a strong
-          sense of storytelling — with an understanding of how visual
-          development supports a full production.
-        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {cards.map((c, i) => (
