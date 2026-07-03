@@ -16,7 +16,6 @@ export default function Skills() {
     "Color Theory",
     "Anatomy",
     "Storytelling",
-    "Anime & Manga",
   ];
 
   return (
