@@ -66,9 +66,6 @@ export default function Projects() {
               </div>
 
               {/* Static index badge */}
-              <span className="absolute top-4 left-4 overline text-white/70 z-10">
-                {String(i + 1).padStart(2, "0")}
-              </span>
             </button>
           ))}
         </div>
