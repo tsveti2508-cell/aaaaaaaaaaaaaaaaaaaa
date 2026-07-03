@@ -1,21 +1,32 @@
 import React from "react";
 
 export default function Skills() {
-  const tools = [
-    { label: "Photoshop", detail: "Digital painting" },
-    { label: "Procreate", detail: "Sketch to final" },
-    { label: "Clip Studio", detail: "Line art & comics" },
-    { label: "Traditional", detail: "Graphite, ink, watercolor" },
-  ];
-
-  const disciplines = [
-    "Character Design",
-    "Skin Concept",
-    "Illustration",
-    "Visual Development",
-    "Color Theory",
-    "Anatomy",
-    "Storytelling",
+  const groups = [
+    {
+      title: "Software & Programmes",
+      items: [
+        "Photoshop",
+        "Procreate",
+        "Clip Studio",
+        "After Effects",
+        "Illustrator",
+        "Traditional Media",
+        "Blender (learning)",
+      ],
+    },
+    {
+      title: "Creative Focus",
+      items: [
+        "Character Design",
+        "Skin Concept",
+        "Visual Development",
+        "Color Theory",
+        "Anatomy",
+        "Storytelling",
+        "VFX",
+        "3D Modelling",
+      ],
+    },
   ];
 
   return (
@@ -36,39 +47,26 @@ export default function Skills() {
           </h2>
         </div>
 
-        {/* Disciplines list */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-4 mb-20 md:mb-32 border-t border-white/10 pt-8">
-          {disciplines.map((d, i) => (
+        {/* Panels */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          {groups.map((g, gi) => (
             <div
-              key={i}
-              data-testid={`discipline-${i}`}
-              className="flex items-start gap-3"
+              key={g.title}
+              data-testid={`skill-panel-${gi}`}
+              className="relative rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:p-10"
             >
-              <span className="overline text-[#C8AA6E] mt-1 shrink-0">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <p className="font-body text-base md:text-lg text-neutral-200 leading-snug">
-                {d}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* Tools grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {tools.map((t, i) => (
-            <div
-              key={i}
-              data-testid={`tool-${i}`}
-              className="border-t border-white/10 pt-6"
-            >
-              <p className="overline text-neutral-500 mb-2">
-                {String(i + 1).padStart(2, "0")}
-              </p>
-              <p className="font-display text-2xl md:text-3xl text-white mb-1">
-                {t.label}
-              </p>
-              <p className="text-sm text-neutral-400 font-body">{t.detail}</p>
+              <p className="overline text-[#C8AA6E] mb-8">{g.title}</p>
+              <div className="flex flex-wrap gap-3">
+                {g.items.map((item, i) => (
+                  <span
+                    key={item}
+                    data-testid={`skill-chip-${gi}-${i}`}
+                    className="inline-flex items-center px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-neutral-200 font-body text-sm md:text-base hover:border-[#C8AA6E]/60 hover:text-[#C8AA6E] hover:bg-[#C8AA6E]/5 transition-all duration-300 cursor-default"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
