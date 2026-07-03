@@ -33,7 +33,7 @@ export default function Nav() {
           data-testid="nav-logo"
           className="font-display text-2xl tracking-tight text-white flex items-center gap-2"
         >
-          <span>Tsvetelina</span>
+          <span>Tsvetelina Shopova</span>
         </a>
 
         <div className="hidden md:flex items-center gap-10">

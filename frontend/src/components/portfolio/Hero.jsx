@@ -34,9 +34,9 @@ export default function Hero() {
 
         <h1
           data-testid="hero-title"
-          className="font-display text-[18vw] md:text-[13vw] lg:text-[11vw] leading-[0.88] tracking-tighter text-white"
+          className="font-display text-[14vw] md:text-[10vw] lg:text-[9vw] leading-[0.88] tracking-tighter text-white"
         >
-          Tsvetelina
+          Tsvetelina<br />Shopova
         </h1>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-4xl">

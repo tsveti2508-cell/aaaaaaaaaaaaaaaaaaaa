@@ -3,7 +3,7 @@
 // Descriptions are verbatim from the artist's ArtStation project pages.
 
 export const artist = {
-  name: "Tsvetelina",
+  name: "Tsvetelina Shopova",
   role: "2D Concept Artist",
   targetStudio: "Riot Games",
   location: "Available Worldwide · Remote",
