@@ -39,16 +39,12 @@ export default function Hero() {
           Tsvetelina<span className="text-[#C8AA6E]">.</span>
         </h1>
 
-        <p
-          data-testid="hero-subtitle"
-          className="font-display text-2xl md:text-4xl text-[#C8AA6E] mt-4 tracking-wide"
-        >
-          2D Concept Artist
-        </p>
-
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-4xl">
-          <p className="text-lg md:text-xl text-neutral-200 leading-relaxed font-body">
-            {artist.tagline}
+          <p
+            data-testid="hero-subtitle"
+            className="font-display text-3xl md:text-5xl text-[#C8AA6E] tracking-wide"
+          >
+            2D Concept Artist
           </p>
           <div className="flex flex-col justify-end gap-4">
             <a
