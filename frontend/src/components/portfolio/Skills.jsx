@@ -32,7 +32,7 @@ export default function Skills() {
             data-testid="skills-heading"
             className="font-display text-5xl md:text-7xl leading-[0.95] tracking-tighter text-white"
           >
-            The <span className="italic text-[#C8AA6E]">Craft</span>
+            Skills
           </h2>
         </div>
 
