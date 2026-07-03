@@ -8,7 +8,7 @@ export default function Footer() {
     >
       <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <p className="font-display text-lg tracking-tight text-white">
-          Tsvetelina<span className="text-[#C8AA6E]">.</span>
+          Tsvetelina
         </p>
         <p className="overline text-neutral-500">
           © {new Date().getFullYear()} · All artwork property of Tsvetelina
