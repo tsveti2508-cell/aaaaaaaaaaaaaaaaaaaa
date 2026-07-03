@@ -104,7 +104,7 @@ export const projects = [
   {
     id: "anime",
     title: "Anime / Manga Art",
-    category: "Illustration",
+    category: "Traditional Concept Art",
     subtitle: "Ulquiorra — Bleach · Broken Doll Challenge",
     year: "2025",
     cover: "https://cdna.artstation.com/p/assets/images/images/099/694/802/large/tsvetelina-img-0428.webp?1780685825",
