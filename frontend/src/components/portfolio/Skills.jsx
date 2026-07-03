@@ -61,7 +61,7 @@ export default function Skills() {
                   <span
                     key={item}
                     data-testid={`skill-chip-${gi}-${i}`}
-                    className="inline-flex items-center px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-neutral-200 font-body text-sm md:text-base hover:border-[#C8AA6E]/60 hover:text-[#C8AA6E] hover:bg-[#C8AA6E]/5 transition-all duration-300 cursor-default"
+                    className="inline-flex items-center px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-neutral-200 font-display text-base md:text-lg tracking-wide hover:border-[#C8AA6E]/60 hover:text-[#C8AA6E] hover:bg-[#C8AA6E]/5 transition-all duration-300 cursor-default"
                   >
                     {item}
                   </span>
