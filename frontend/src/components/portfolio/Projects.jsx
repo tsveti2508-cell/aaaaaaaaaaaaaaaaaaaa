@@ -29,6 +29,12 @@ export default function Projects() {
               The <span className="italic text-[#C8AA6E]">Portfolio</span>
             </h2>
           </div>
+          <p
+            data-testid="projects-intro"
+            className="text-neutral-300 max-w-md font-body text-base md:text-lg leading-relaxed"
+          >
+            This portfolio shows some of my work where I express my understanding of basic art skills, my creativity, concepting, and provides descriptions of the process.
+          </p>
         </div>
 
         {/* Bento grid */}
