@@ -13,11 +13,11 @@ export const artist = {
     "I have been drawn to art from a young age, starting with traditional art and moving into digital. I have years of experience, have worked on multiple projects, and have also done commissions for people. I am able to create interesting character designs — from their outfits to elements that symbolize cultures and work with colors to create the perfect atmosphere.",
     "Alongside concepting art, I also have a big interest in Visual effects and have mastered programmes for editing such as After Effects and Photoshop. Furthermore, I am currently in the process of learning 3d modelling.",
   ],
-  email: "hello@tsvetelina.art",
+  email: "Tsveti2508@gmail.com",
   socials: [
     { label: "ArtStation", url: "https://www.artstation.com/tsvetelina", handle: "tsvetelina" },
     { label: "Instagram", url: "https://www.instagram.com/tliishh", handle: "@tliishh" },
-    { label: "Email", url: "mailto:hello@tsvetelina.art", handle: "hello@tsvetelina.art" },
+    { label: "Email", url: "mailto:Tsveti2508@gmail.com", handle: "Tsveti2508@gmail.com" },
   ],
   avatar: "https://cdna.artstation.com/p/users/avatars/013/989/522/large/2b1a3ae565381760124b30f25ec62a1a.jpg?1781560300",
 };
