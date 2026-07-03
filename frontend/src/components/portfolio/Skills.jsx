@@ -27,7 +27,7 @@ export default function Skills() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         {/* Heading */}
         <div className="mb-16 md:mb-24">
-          <p className="overline text-[#C8AA6E] mb-4">Toolkit · 02</p>
+          <p className="overline text-[#C8AA6E] mb-4">Skills</p>
           <h2
             data-testid="skills-heading"
             className="font-display text-5xl md:text-7xl leading-[0.95] tracking-tighter text-white"
