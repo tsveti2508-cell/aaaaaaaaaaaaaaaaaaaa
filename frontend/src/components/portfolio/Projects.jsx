@@ -29,9 +29,6 @@ export default function Projects() {
               The <span className="italic text-[#C8AA6E]">Portfolio</span>
             </h2>
           </div>
-          <p className="text-neutral-400 max-w-md font-body text-base md:text-lg">
-            A curated glimpse into current work — character concepts, skin design, illustration series, and traditional foundations.
-          </p>
         </div>
 
         {/* Bento grid */}
@@ -44,7 +41,7 @@ export default function Projects() {
               onClick={() => setActive(p)}
               className={`project-card group text-left ${p.span}`}
             >
-              <img src={p.image} alt={p.title} loading="lazy" />
+              <img src={p.cover} alt={p.title} loading="lazy" />
               <div className="overlay">
                 <div className="flex items-start justify-between gap-4 pointer-events-none">
                   <div>
@@ -79,12 +76,32 @@ export default function Projects() {
         >
           {active && (
             <div className="grid grid-cols-1 md:grid-cols-2 max-h-[85vh] overflow-y-auto">
-              <div className="relative aspect-square md:aspect-auto md:h-full bg-black">
-                <img
-                  src={active.image}
-                  alt={active.title}
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative aspect-square md:aspect-auto md:h-full bg-black overflow-y-auto">
+                {active.images && active.images.length > 0 ? (
+                  <div className="flex flex-col">
+                    {active.images.map((img, i) => (
+                      <figure key={i} className="border-b border-white/10 last:border-b-0">
+                        <img
+                          src={img.url}
+                          alt={img.caption || active.title}
+                          className="w-full h-auto object-cover"
+                          loading="lazy"
+                        />
+                        {img.caption && (
+                          <figcaption className="px-6 py-3 text-xs text-neutral-400 font-body italic border-t border-white/5">
+                            {img.caption}
+                          </figcaption>
+                        )}
+                      </figure>
+                    ))}
+                  </div>
+                ) : (
+                  <img
+                    src={active.cover}
+                    alt={active.title}
+                    className="w-full h-full object-cover"
+                  />
+                )}
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-between gap-8">
                 <div>

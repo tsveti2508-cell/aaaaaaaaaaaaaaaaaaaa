@@ -1,0 +1,41 @@
+{
+  "summary": "Latency-sensitive validation of Tsvetelina portfolio. Backend endpoints healthy. Frontend renders all sections and most flows work (nav, project dialogs open/close via ESC and close btn, external links, mobile menu toggle, copy-email toast, contact socials). Two blockers found: project card cover images render with empty src (data/prop mismatch: data uses `cover`, component uses `p.image`), and skills marquee data-testids are missing from DOM (react-fast-marquee does not forward `data-testid` prop — marquees do animate visually).",
+  "tested_scope": ["backend", "frontend", "integration"],
+  "passed": [
+    "GET /api/ -> 200 { message: 'Hello World' }",
+    "GET /api/status -> 200 []",
+    "Homepage loads without console errors",
+    "main-nav present with logo and 4 links + Let's Talk CTA",
+    "All 4 project cards render (project-card-kaisa/tarot/james/anime)",
+    "Project dialog opens, shows external link (verified href to ArtStation, e.g. https://www.artstation.com/artwork/Ov22VK)",
+    "Dialog closes via ESC and via project-dialog-close button",
+    "4 tool cards (tool-0..tool-3) render",
+    "Contact: social-artstation -> https://www.artstation.com/tsvetelina",
+    "Contact: social-instagram -> https://www.instagram.com/tliishh",
+    "Contact: mailto-btn -> mailto:hello@tsvetelina.art",
+    "copy-email-btn triggers sonner toast 'Email copied to clipboard'",
+    "Mobile (375x812): nav-menu-toggle opens mobile-menu with all 4 nav links",
+    "Hero collage background and avatar image load (naturalWidth > 0)"
+  ],
+  "failed": [
+    {
+      "area": "Projects grid images",
+      "issue": "All 4 project card <img> elements have empty src (naturalWidth=0). Projects.jsx line 47 uses `p.image` but data/portfolio.js defines the field as `cover`. Alt text is set correctly but no image ever loads.",
+      "evidence": "page.evaluate over img tags returned 4 broken images with src='' and alts: Blood Moon Kai'sa, Tarot Cards design, Traditional Art — James McAvoy, Anime / Manga Art. grep confirms data uses `cover:` and Projects.jsx uses `src={p.image}`.",
+      "priority": "HIGH"
+    },
+    {
+      "area": "Skills marquees",
+      "issue": "data-testid='skills-marquee-1' and 'skills-marquee-2' not present in DOM. react-fast-marquee's <Marquee> does not forward arbitrary data-testid to the rendered wrapper (rendered elements use classes rfm-marquee-container/rfm-marquee). Marquees themselves render and animate correctly.",
+      "evidence": "query_selector returned null for both testids; querySelectorAll('.rfm-marquee-container') returned 2 elements; screenshot shows CHARACTER DESIGN / SKIN CONCEPT scrolling.",
+      "priority": "MEDIUM"
+    }
+  ],
+  "action_items": [
+    "Fix Projects.jsx line 47: change `src={p.image}` to `src={p.cover}` (or add `image` field to data). Without this fix, no project cover images are shown.",
+    "Add data-testid to a wrapper div around each <Marquee>, e.g. <div data-testid='skills-marquee-1'><Marquee .../></div>, since react-fast-marquee does not pass through the prop."
+  ],
+  "success_rate": {"backend": "100%", "frontend": "~80%"},
+  "retest_needed": true,
+  "full_testing_deferred": true
+}

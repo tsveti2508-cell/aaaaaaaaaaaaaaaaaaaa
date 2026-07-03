@@ -3,7 +3,7 @@ import { artist } from "@/data/portfolio";
 import { ArrowDown } from "lucide-react";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1760930380017-b0f1fdad0242?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxkYXJrJTIwcnVpbnMlMjBmYW50YXN5JTIwY29uY2VwdCUyMGFydHxlbnwwfHx8fDE3ODMwNzcwMzl8MA&ixlib=rb-4.1.0&q=85";
+  "https://customer-assets.emergentagent.com/job_creative-portfolio-1438/artifacts/o43boset_image.jpg";
 
 export default function Hero() {
   return (
@@ -66,31 +66,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom ticker */}
-      <div className="relative z-20 border-t border-white/10 py-4 overflow-hidden bg-black/40 backdrop-blur">
-        <div className="ticker whitespace-nowrap flex gap-12">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <React.Fragment key={i}>
-              <span className="font-display italic text-2xl md:text-3xl text-neutral-400">
-                Character Design
-              </span>
-              <span className="text-[#C8AA6E] text-2xl">✦</span>
-              <span className="font-display italic text-2xl md:text-3xl text-neutral-400">
-                Skin Concepts
-              </span>
-              <span className="text-[#C8AA6E] text-2xl">✦</span>
-              <span className="font-display italic text-2xl md:text-3xl text-neutral-400">
-                Illustration
-              </span>
-              <span className="text-[#C8AA6E] text-2xl">✦</span>
-              <span className="font-display italic text-2xl md:text-3xl text-neutral-400">
-                Visual Development
-              </span>
-              <span className="text-[#C8AA6E] text-2xl">✦</span>
-            </React.Fragment>
-          ))}
-        </div>
-      </div>
+      {/* Bottom accent line */}
+      <div className="relative z-20 border-t border-white/10 h-16 bg-black/40 backdrop-blur" />
     </section>
   );
 }
