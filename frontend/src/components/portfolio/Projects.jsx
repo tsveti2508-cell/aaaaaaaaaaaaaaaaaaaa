@@ -21,7 +21,7 @@ export default function Projects() {
         {/* Section header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16 md:mb-24">
           <div>
-            <p className="overline text-[#C8AA6E] mb-4">Portfolio · 04</p>
+            <p className="overline text-[#C8AA6E] mb-4">Portfolio</p>
             <h2
               data-testid="projects-heading"
               className="font-display text-6xl md:text-8xl leading-[0.9] tracking-tighter text-white"
