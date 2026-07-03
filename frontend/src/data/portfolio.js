@@ -43,7 +43,6 @@ export const projects = [
     title: "Blood Moon Kai'sa",
     category: "Skin Concept",
     subtitle: "League of Legends — Fan Concept",
-    year: "2025",
     cover: "https://cdnb.artstation.com/p/assets/covers/images/099/990/601/large/tsvetelina-tsvetelina-img-5888.jpg?1781561224",
     images: [
       {
@@ -61,7 +60,6 @@ export const projects = [
     title: "Tarot Cards design",
     category: "Illustration Series",
     subtitle: "Original Deck for a Game",
-    year: "2025",
     cover: "https://cdna.artstation.com/p/assets/covers/images/099/989/698/large/tsvetelina-tsvetelina-fool.jpg?1781559119",
     images: [
       { url: "https://cdnb.artstation.com/p/assets/images/images/099/677/813/large/tsvetelina-artboard-2.webp?1780648359", caption: "Tarot card design inspired by Greek mythology." },
@@ -89,7 +87,6 @@ export const projects = [
     title: "Traditional Art — James McAvoy",
     category: "Traditional Portrait",
     subtitle: "Acrylic on canvas",
-    year: "2025",
     cover: "https://cdnb.artstation.com/p/assets/images/images/099/694/967/large/tsvetelina-img-9003.webp?1780685999",
     images: [
       { url: "https://cdnb.artstation.com/p/assets/images/images/099/694/967/large/tsvetelina-img-9003.webp?1780685999", caption: "Finished version" },
@@ -106,7 +103,6 @@ export const projects = [
     title: "Anime / Manga Art",
     category: "Traditional Concept Art",
     subtitle: "Ulquiorra — Bleach · Broken Doll Challenge",
-    year: "2025",
     cover: "https://cdna.artstation.com/p/assets/images/images/099/694/802/large/tsvetelina-img-0428.webp?1780685825",
     images: [
       { url: "https://cdna.artstation.com/p/assets/images/images/099/694/802/large/tsvetelina-img-0428.webp?1780685825", caption: "Ulquiorra drawing" },
